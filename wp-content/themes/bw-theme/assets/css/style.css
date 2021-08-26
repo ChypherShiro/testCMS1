@@ -377,7 +377,7 @@ body._lock {
 }
 
 ._ibg {
-  background-image: url("img/main_slider/01.png");
+  background-image: url("img/main_slider/bedtest.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1785,7 +1785,7 @@ body._lock {
 
 .webp .control-main-slider__arrow{ background: url(../img/icons/prev.webp) 0 0 no-repeat; }
 
-.webp ._ibg{ background-image: url(img/main_slider/01.webp); }
+.webp ._ibg{ background-image: url(img/main_slider/bedtest.png); }
 
 .webp .control-slider-lots__link{ background: url(../img/icons/circle.webp); }
 

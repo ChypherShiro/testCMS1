@@ -1,24 +1,19 @@
 <?php
   
 
+  add_action( 'wp_enqueue_scripts', 'erketai_assets' );
+
    function erketai_assets() {
    
-   
-       wp_enqueue_style( 'maincss', get_template_directory_uri() . '/assets/css/style.css' );
-       
-       wp_register_script('script.min', get_stylesheet_directory_uri().'/assets/js/script.min.js');
-    wp_register_script('script', get_stylesheet_directory_uri().'/assets/js/script.js');
-    wp_register_script('slider', get_stylesheet_directory_uri().'/assets/js/slider.js');
-    
-
-    wp_enqueue_script('script.min');
-    wp_enqueue_script('script');
-    wp_enqueue_script('slider');
-   
+    wp_deregister_script( 'jquery' );
+    wp_register_script( 'jquery', get_template_directory_uri(  ) . '/assets/js/jquery-3.5.1.min.js', false , null , true);
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'script', get_template_directory_uri(  ) . '/assets/js/script.js', array('jquery'), null, 'footer' );
+    wp_enqueue_style( 'main', get_stylesheet_uri(  ));
        
    }
    
-   add_action( 'wp_enqueue_scripts', 'erketai_assets' );
+  
 
 
 ?>

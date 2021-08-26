@@ -9,20 +9,19 @@
                         <div class="item-main-slider__content">
                             <div class="item-main__container _container">
                                 <div class="title">
-                                    <div class="title__item title_mod"> <p class="only">Только эксклюзивные</p></div>
-                                    <div class="title__main title__main_w title__main_regular"> <p class="laptev">Добро пожаловать в наш интернет магазин постельного белья</p>
+                                    <div class="title__item title_mod"> <p class="only"><?= CFS()->get('header_title')  ?></p></div>
+                                    <div class="title__main title__main_w title__main_regular">
+                                        <p class="laptev"><?= CFS()->get('header_subtitle')  ?></p>
                                     </div>
                                 </div>
                                 <div class="item-main-slider__text">
-Наша цель - это комфорт, удобство и уют в вашем доме. Мы ценим семейный очаг и заботимся о том, чтобы дома Вы смогли расслабиться и насладиться общением с любимыми в абсолютной гармонии.
-
-Играйте со стилем в вашем доме, меняйте облик вашей спальни по настроению, сезону или совместным увлечениям, а мы с любовью поможет подобрать вам лучший текстиль для вашей спальни по выгодной цене.
+                                    <?= CFS()->get('header_slogan')  ?>
                                 </div>
                                 
                             </div>
                         </div>
                         <div class="item-main-slider__bg _ibg">
-                            <picture><source srcset="<?php bloginfo('template_directory') ?>/assets/img/main_slider/01.webp" type="image/webp"><img src="<?php bloginfo('template_directory') ?>/assets/img/main_slider/bedtest.png" alt=""></picture>
+                            <picture><source srcset="<?= CFS()->get('header_bg') ?>" type="image/webp"><img src="<?= CFS()->get('header_bg') ?>" alt=""></picture>
                         </div>
                     </div>
 
@@ -62,179 +61,46 @@
                     </div>
                     <div class="lots__slider slider-lots">
                         <div class="slider-lots__body _swiper">
-                            <div class="slider-lots__slider">
-                                <div class="lot">
-                                    <div class="lot__header">
-                                        <a href="#" class="lot__image _ibg">
-                                            <picture><source srcset="img/lots/01.webp" type="image/webp"><img src="img/erketai_img/1.png"></picture>
-                                        </a>
-                                       
-                                    </div>
-                                    <a href="#" class="lot__title">
-                                        Постельное бельё
-                                    </a>
-                                    <div class="lot__info info-lot">
+                            <?php 
+                            $loop = CFS()->get('card');
+                            foreach($loop as $row){
+                                ?>
+                                <div class="slider-lots__slider">
+                                    <div class="lot">
+                                        <div class="lot__header">
+                                            <a href="#" class="lot__image _ibg">
+                                                <img src="<?= $row['card_img'] ?>">
+                                            </a>
                                         
-                                        <div class="info-lot__current-bet current-bet-info-lot">
-                                            <div class="current-bet-info-lot__label">Цена</div>
-                                            <div class="current-bet-info-lot__value">1000</div>
-                                            <div class="current-bet-info-lot__currency">Сом</div>
                                         </div>
-                                        
-                                    </div>
-                                    <a href="https://wa.me/996770220555" class="lot__btn btn btn_big">
-                                        <span class="btn__body"><span>Заказать прямо сейчас!</span></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="slider-lots__slider">
-                                <div class="lot">
-                                    <div class="lot__header">
-                                        <a href="#" class="lot__image _ibg">
-                                            <picture><source srcset="img/lots/02.webp" type="image/webp"><img src="img/erketai_img/2.png" alt=""></picture>
+                                        <a href="#" class="lot__title">
+                                           <?= $row['card_title'] ?>
                                         </a>
-                                        
-
-                                        
-                                    </div>
-                                    <a href="#" class="lot__title">
-                                        Постельное бельё
-                                    </a>
-                                    <div class="lot__info info-lot">
-                                        
-                                        <div class="info-lot__current-bet current-bet-info-lot">
-                                            <div class="current-bet-info-lot__label">Цена</div>
-                                            <div class="current-bet-info-lot__value">1000
+                                        <div class="lot__info info-lot">
+                                            
+                                            <div class="info-lot__current-bet current-bet-info-lot">
+                                                <div class="current-bet-info-lot__label">Цена</div>
+                                                <div class="current-bet-info-lot__value"><?= $row['card_price'] ?></div>
+                                                <div class="current-bet-info-lot__currency"><?= $row['card_currency'] ?></div>
                                             </div>
-                                            <div class="current-bet-info-lot__currency">Сом</div>
+                                            
                                         </div>
-                                        
-                                    </div>
-                                    <a href="https://wa.me/996770220555" class="lot__btn btn btn_big">
-                                        <span class="btn__body"><span>Заказать прямо сейчас!</span></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="slider-lots__slider">
-                                <div class="lot">
-                                    <div class="lot__header">
-                                        <a href="#" class="lot__image _ibg">
-                                            <picture><source srcset="img/lots/03.webp" type="image/webp"><img src="img/erketai_img/3.png" alt=""></picture>
+                                        <a href="https://wa.me/996770220555" class="lot__btn btn btn_big">
+                                            <span class="btn__body"><span><?= $row['card_btn'] ?></span></span>
                                         </a>
-                                        
-                                          
-
                                     </div>
-                                    <a href="#" class="lot__title">
-                                        Постельное бельё
-                                    </a>
-                                    <div class="lot__info info-lot">
-                                        
-                                        <div class="info-lot__current-bet current-bet-info-lot">
-                                            <div class="current-bet-info-lot__label">Цена</div>
-                                            <div class="current-bet-info-lot__value">1000
-                                            </div>
-                                            <div class="current-bet-info-lot__currency">Сом</div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="https://wa.me/996770220555" class="lot__btn btn btn_big">
-                                        <span class="btn__body"><span>Заказать прямо сейчас!</span></span>
-                                    </a>
                                 </div>
-                            </div>
+                                <?php
+                            }
+                            ?>
+                            
 
 
                         </div>
                         
                     </div>
-<div class="lots__slider slider-lots">
-                        <div class="slider-lots__body _swiper">
-                            <div class="slider-lots__slider">
-                                <div class="lot">
-                                    <div class="lot__header">
-                                        <a href="#" class="lot__image _ibg">
-                                            <picture><source srcset="img/lots/01.webp" type="image/webp"><img src="/img/erketai_img/4.png" alt=""></picture>
-                                        </a>
-                                       
-                                    </div>
-                                    <a href="#" class="lot__title">
-                                        Постельное бельё
-                                    </a>
-                                    <div class="lot__info info-lot">
-                                        
-                                        <div class="info-lot__current-bet current-bet-info-lot">
-                                            <div class="current-bet-info-lot__label">Цена</div>
-                                            <div class="current-bet-info-lot__value">1000
-                                            </div>
-                                            <div class="current-bet-info-lot__currency">Сом</div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="https://wa.me/996770220555" class="lot__btn btn btn_big">
-                                        <span class="btn__body"><span>Заказать прямо сейчас!</span></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="slider-lots__slider">
-                                <div class="lot">
-                                    <div class="lot__header">
-                                        <a href="#" class="lot__image _ibg">
-                                            <picture><source srcset="img/lots/02.webp" type="image/webp"><img src="img/erketai_img/5.png" alt=""></picture>
-                                        </a>
-                                        
-
-                                        
-                                    </div>
-                                    <a href="#" class="lot__title">
-                                        Постельное бельё
-                                    </a>
-                                    <div class="lot__info info-lot">
-                                        
-                                        <div class="info-lot__current-bet current-bet-info-lot">
-                                            <div class="current-bet-info-lot__label">Цена</div>
-                                            <div class="current-bet-info-lot__value">1000
-                                            </div>
-                                            <div class="current-bet-info-lot__currency">Сом</div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="https://wa.me/996770220555" class="lot__btn btn btn_big">
-                                        <span class="btn__body"><span>Заказать прямо сейчас!</span></span></a>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="slider-lots__slider">
-                                <div class="lot">
-                                    <div class="lot__header">
-                                        <a href="#" class="lot__image _ibg">
-                                            <picture><source srcset="img/lots/03.webp" type="image/webp"><img src="img/erketai_img/6.png" alt=""></picture>
-                                        </a>
-                                        
-                                          
-
-                                    </div>
-                                    <a href="#" class="lot__title">
-                                        Постельное бельё
-                                    </a>
-                                    <div class="lot__info info-lot">
-                                        
-                                        <div class="info-lot__current-bet current-bet-info-lot">
-                                            <div class="current-bet-info-lot__label">Цена</div>
-                                            <div class="current-bet-info-lot__value">1000
-                                            </div>
-                                            <div class="current-bet-info-lot__currency">Сом</div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="https://wa.me/996770220555" class="lot__btn btn btn_big">
-                                        <span class="btn__body"><span>Заказать прямо сейчас!</span></span>
-                                    </a>
-                                </div>
-                            </div>
-                            
-
-                        </div>
+    <div class="lots__slider slider-lots">
+                        
                         <div class="slider-lots__control control-slider-lots">
                             <div class="control-slider-lots__arrow">
                                 <span></span>
@@ -246,7 +112,7 @@
                                 <span></span>
                             </div>
                         </div>
-                    </div>
+    </div>
 
 
                 </div>

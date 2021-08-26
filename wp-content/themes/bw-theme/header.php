@@ -21,7 +21,7 @@
 
             <nav class="menu__body">
                 <ul class="menu__list">
-                <li><a href="#header" class="menu__link _goto-block">Главная</a></li>
+                <li><a href="<?= get_home_url();?>" class="menu__link _goto-block">Главная</a></li>
                     <li><a href="#store" class="menu__link _goto-block">Ассортимент</a></li>
                     <li><a href="#service" class="menu__link _goto-block">Наши услуги</a></li>
                     <!-- <li><a href="" class="menu__link _goto-block">????</a></li> -->
