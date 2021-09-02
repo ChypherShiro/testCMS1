@@ -1,9 +1,13 @@
 $(document).ready(function() {
-    // body...
-    $('a[href^="#"]').click(function(){
-        var targer = $(this).attr('href');
-        $('html,body').animate({
-            scrollTop: $(targer).offset().top
-        } , 500);
-    })
-})
+    /* Плавная прокрутка меню */
+    $('nav a[id^="#"]').click(function() {
+        let target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        },500);
+        $('nav a[href^="#"]').parent().removeClass('active');
+        $(this).parent().addClass('active');
+        $('.menu__mobile .menu').toggle(500);
+        $('.menu__burger').toggleClass('close');
+        return false;
+    })});

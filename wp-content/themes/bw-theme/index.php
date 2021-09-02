@@ -57,14 +57,23 @@
                                 <span></span>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="lots__slider slider-lots">
+                         
+                        
+                        
+        
+         <div class="lots__slider slider-lots">
                         <div class="slider-lots__body _swiper">
-                            <?php 
+
+
+                            <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                            
+
+                                  <?php 
                             $loop = CFS()->get('card');
                             foreach($loop as $row){
                                 ?>
+                                <div class="swiper-slide">
                                 <div class="slider-lots__slider">
                                     <div class="lot">
                                         <div class="lot__header">
@@ -90,9 +99,36 @@
                                         </a>
                                     </div>
                                 </div>
+                                </div>
                                 <?php
                             }
                             ?>
+
+
+
+                            
+       
+                            </div>
+                            <div class="slider-lots__control control-slider-lots">
+                            <div class="control-slider-lots__arrow">
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="control-slider-lots__link">
+                                <a href="#">Посмотреть ещё</a>
+                            </div>
+                            <div class="control-slider-lots__arrow">
+                                <span><div class="swiper-button-next"></div></span>
+                            </div>
+                        </div>
+                            <div class="swiper-button-next"> <img src="<?php bloginfo('template_directory') ?>/assets/img/erketai_img/logotest.png" alt=""></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+                           
                             
 
 
@@ -101,17 +137,7 @@
                     </div>
     <div class="lots__slider slider-lots">
                         
-                        <div class="slider-lots__control control-slider-lots">
-                            <div class="control-slider-lots__arrow">
-                                <span></span>
-                            </div>
-                            <div class="control-slider-lots__link">
-                                <a href="#">Посмотреть ещё</a>
-                            </div>
-                            <div class="control-slider-lots__arrow">
-                                <span></span>
-                            </div>
-                        </div>
+                        
     </div>
 
 
