@@ -120,8 +120,8 @@
                                     <span><div class="swiper-button-next"></div></span>
                                 </div>
                             </div>
-                            <div class="swiper-button-next"><img src="" alt=""></div>
-      <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"><img src="<?php bloginfo('template_directory') ?>/assets/img/right_arrow.png" alt=""></div>
+      <div class="swiper-button-prev"><img src="<?php bloginfo('template_directory') ?>/assets/img/left_arrow.png" alt=""></div>
       <div class="swiper-pagination"></div>
     </div>
 
