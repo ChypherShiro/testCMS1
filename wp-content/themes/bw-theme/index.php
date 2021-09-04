@@ -261,13 +261,65 @@
                     </div>
                 </div>
             </div>
-            <div class="info">
-                <div class="info__container _container">
-                    
-                </div>
-            </div>
+
+
+
+
+           
             
     </div>
+
+    <div class="services">
+                <div class="services__container _container">
+                    <div class="services__header block-header">
+                        <div class="block-header__title title">
+                            <div class="title__item">Контакты</div>
+                            <div class="title__main title__main_w">Наши социальные сети
+                            </div>
+                        </div>
+                        <div class="block-header__decor block-decor">
+                            <div class="block-decor__items">
+                                <span></span>
+                            </div>
+                            <div class="block-decor__icon">
+                                <div>
+                                    <picture><source srcset="<?php bloginfo('template_directory') ?>/assets/img/block-header/contacts.webp" type="image/webp"><img src="<?php bloginfo('template_directory') ?>/assets/img/block-header/contacts.png" alt=""></picture>
+                                </div>
+
+                            </div>
+                            <div class="block-decor__items">
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="services__row">
+                        
+                        <div class="services__column">
+                            <a href="#" class="services__item service">
+                                <picture><source srcset="<?php bloginfo('template_directory') ?>/assets/img/services/instagram.png" type="image/webp"><img src="<?php bloginfo('template_directory') ?>/assets/img/services/instagram.png" class="service__image"></picture>
+                            </a>
+                            <a href="#" class="service__title">
+                                Инстаграмм
+                            </a>
+                            
+                            
+                        </div>
+                        <div class="services__column">
+                            <a href="#" class="services__item service">
+                                <picture><source srcset="<?php bloginfo('template_directory') ?>/assets/img/services/facebook.webp" type="image/webp"><img src="<?php bloginfo('template_directory') ?>/assets/img/services/facebook.png" class="service__image"></picture>
+                            </a>
+                            <a href="#" class="service__title">
+                                Facebook
+                            </a>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
 
 
 <?php get_footer() ?>

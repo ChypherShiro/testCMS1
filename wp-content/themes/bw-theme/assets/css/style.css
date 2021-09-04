@@ -399,11 +399,15 @@ body._lock {
 
 
 .lots {
-  padding: 85px 0px 63px 0px;
+  padding: 0px 0px 63px 0px;
 }
 
 .lots__header {
   margin: 0px 0px 75px 0px;
+}
+
+#contacts{
+  padding-left: 900px;
 }
 
 .swiper {
