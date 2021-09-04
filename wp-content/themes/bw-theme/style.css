@@ -689,6 +689,7 @@ body._lock {
 .block-decor {
   align-items: center;
   display: flex;
+  margin-bottom: 40px;
 }
 
 .block-decor__items {
@@ -1803,3 +1804,10 @@ body._lock {
 .webp .text-categories__body{ background: url(../img/categories/dec.webp) left no-repeat; }
 
 .webp .form-subscribe__btn span{ background: url(../img/icons/ok-btn.webp) right no-repeat; }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
