@@ -18,17 +18,31 @@ testWebP(function (support) {
 
 let user_icon = document.querySelector('.user-header__icon');
 let user_menu = document.querySelector('.user-header__menu');
+let menu_list = document.querySelector('.menu__list');
 user_icon.addEventListener("click", function (e) {
-    let user_menu = document.querySelector('.user-header__menu');
-    user_menu.classList.toggle('_active')
+    // let user_menu = document.querySelector('.user-header__menu');
+    // user_menu.classList.toggle('_active')
+    
 });
 
-document.documentElement.addEventListener("click", function (e) {
-    if (!e.target.closest('.user-header')) {
+menu_list.addEventListener("click", function(event) {
+    if(event.target.classList.contains('menu__link')) {
+         let menu__body = document.querySelector('.menu__body');
+         let icon__menu = document.querySelector('.icon-menu');
+        let body = document.body;
+        body.classList.remove('lock');
+        menu__body.classList.remove('active');
+        icon__menu.classList.remove('active');
 
-        user_menu.classList.remove('_active');
     }
-});
+})
+
+// document.documentElement.addEventListener("click", function (e) {
+//     if (!e.target.closest('.user-header')) {
+//         console.log(user_menu);
+//         // user_menu.classList.remove('_active');
+//     }
+// });
 
 
 $(document).ready(function () {

@@ -34,7 +34,7 @@
                     <div class="control-main-slider__arrow control-main-slider__arrow_next"></div>
                 </div> -->
             </div>
-            <div class="lots">
+            <div id="lot" class="lots">
                 <div class="lots__container _container">
                     <div class="lots__header block-header">
                         <div class="block-header__title title">
@@ -61,7 +61,7 @@
                         
                         
         
-         <div class="lots__slider slider-lots">
+         <div  class="lots__slider slider-lots">
                         <div class="slider-lots__body _swiper">
 
 
@@ -124,17 +124,9 @@
       <div class="swiper-button-prev"><img src="<?php bloginfo('template_directory') ?>/assets/img/left_arrow.png" alt=""></div>
       <div class="swiper-pagination"></div>
     </div>
-
-
-
-
-                           
-                            
-
-
-                        </div>
+</div>
                         
-                    </div>
+</div>
     <div class="lots__slider slider-lots">
                         
                         
@@ -144,7 +136,7 @@
                 </div>
             </div>
             
-            <div class="services">
+            <div id="test" class="services">
                 <div class="services__container _container">
                     <div class="services__header block-header">
                         <div class="block-header__title title">
@@ -269,7 +261,7 @@
             
     </div>
 
-    <div class="services">
+    <div id="contact" class="services">
                 <div class="services__container _container">
                     <div class="services__header block-header">
                         <div class="block-header__title title">
