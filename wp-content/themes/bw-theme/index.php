@@ -94,7 +94,7 @@
                                             </div>
                                             
                                         </div>
-                                        <a href="https://wa.me/996770220555" class="lot__btn btn btn_big">
+                                        <a href="https://wa.me/996703153679" class="lot__btn btn btn_big">
                                             <span class="btn__body"><span><?= $row['card_btn'] ?></span></span>
                                         </a>
                                     </div>
@@ -205,7 +205,7 @@
                     <div class="quotes__header block-header">
                         <div class="block-header__title title">
                             <div class="title__item">Интересные</div>
-                            <div class="title__main">ЦитатЫ
+                            <div class="title__main">Цитата
                             </div>
                         </div>
                         <div class="block-header__decor block-decor">
@@ -241,15 +241,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-quotes__control control-slider-quotes">
-                            <div class="control-slider-quotes__decor"></div>
-                            <div class="control-slider-quotes__link">
-                                <div class="control-slider-quotes__circle">
-
-                                </div>
-                            </div>
-                            <div class="control-slider-quotes__decor"></div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -288,10 +280,10 @@
                     <div class="services__row">
                         
                         <div class="services__column">
-                            <a href="#" class="services__item service">
+                            <a href="https://www.instagram.com/erketai_bedding/?utm_medium=copy_link" class="services__item service">
                                 <picture><source srcset="<?php bloginfo('template_directory') ?>/assets/img/services/instagram.png" type="image/webp"><img src="<?php bloginfo('template_directory') ?>/assets/img/services/instagram.png" class="service__image"></picture>
                             </a>
-                            <a href="#" class="service__title">
+                            <a href="https://www.instagram.com/erketai_bedding/?utm_medium=copy_link" class="service__title">
                                 Инстаграмм
                             </a>
                             
@@ -303,6 +295,17 @@
                             </a>
                             <a href="#" class="service__title">
                                 Facebook
+                            </a>
+                            
+                            
+                        </div>
+
+                        <div class="services__column">
+                            <a href="https://wa.me/996703153679" class="services__item service">
+                                <picture><source srcset="<?php bloginfo('template_directory') ?>/assets/img/services/whatsapp.webp" type="image/webp"><img src="<?php bloginfo('template_directory') ?>/assets/img/services/whatsapp.png" class="service__image"></picture>
+                            </a>
+                            <a href="https://wa.me/996703153679" class="service__title">
+                                WhatsApp
                             </a>
                             
                             
